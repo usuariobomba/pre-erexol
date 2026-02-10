@@ -71,28 +71,30 @@
         <div class="p-6 md:p-8 text-center space-y-6">
 
             <!-- Headline -->
-            <h1 class="text-2xl md:text-3xl font-bold text-gray-800 leading-tight">
-                Oficjalny Dostęp do Dystrybutora <span class="text-blue-600">EREXOL</span>
+            <h1 class="text-2xl md:text-3xl font-bold text-red-600 leading-tight uppercase">
+                ⚠️ WAŻNY KOMUNIKAT
             </h1>
 
-            <!-- Product Image -->
-            <div class="relative w-64 h-64 mx-auto flex items-center justify-center">
-                <img src="images/erexol_product.png" alt="Oryginalny Erexol"
-                    class="w-full h-full object-contain drop-shadow-md">
-            </div>
-
-            <!-- Compliance Warning Text -->
-            <div class="bg-yellow-50 border-l-4 border-yellow-400 p-4 text-left rounded-r-md">
-                <p class="text-sm text-yellow-800 font-medium">
-                    ⚠️ <strong>Uwaga:</strong> Ze względu na duże zainteresowanie promocją, musimy sprawdzić dostępność
-                    w Twoim regionie. Proszę potwierdzić poniżej.
+            <!-- Warning/Info Text -->
+            <div class="bg-red-50 border-l-4 border-red-500 p-4 text-left rounded-r-md shadow-sm">
+                <p class="text-base text-gray-800 font-medium mb-3">
+                    Produkt <strong>EREXOL</strong> nie jest sprzedawany w aptekach, na Allegro ani Amazon.
+                </p>
+                <p class="text-base text-gray-800 font-medium">
+                    Oryginalną kurację z gwarancją jakości możesz zamówić <strong>TYLKO</strong> poprzez tę oficjalną
+                    stronę producenta.
                 </p>
             </div>
 
+            <!-- Discount/Action Text -->
+            <p class="text-lg text-gray-700 font-semibold">
+                Kliknij poniżej, aby aktywować jednorazową zniżkę:
+            </p>
+
             <!-- Call to Action Button (JavaScript Triggered) -->
             <button onclick="irParaOfertaComRastreio()"
-                class="btn-pulse w-full bg-green-600 hover:bg-green-700 text-white font-bold py-4 px-6 rounded-lg text-lg uppercase transition duration-300 shadow-md hover:shadow-lg focus:outline-none focus:ring-4 focus:ring-green-300">
-                SPRAWDŹ DOSTĘPNOŚĆ &raquo;
+                class="btn-pulse w-full bg-green-600 hover:bg-green-700 text-white font-bold py-5 px-6 rounded-xl text-xl uppercase transition duration-300 shadow-lg hover:shadow-xl focus:outline-none focus:ring-4 focus:ring-green-300 transform hover:-translate-y-1">
+                AKTYWUJ RABAT -50% I PRZEJDŹ DALEJ &raquo;
             </button>
 
             <!-- Card Footer: Security Seals -->
@@ -136,7 +138,7 @@
             const btn = document.querySelector('button');
 
             // 1. Visual Feedback
-            btn.innerHTML = 'SPRAWDZANIE... <svg class="animate-spin ml-2 h-5 w-5 text-white inline" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"><circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle><path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path></svg>';
+            btn.innerHTML = 'AKTYWOWANIE RABATU... <svg class="animate-spin ml-2 h-5 w-5 text-white inline" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"><circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle><path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path></svg>';
             btn.classList.add('opacity-75', 'cursor-wait');
 
             // 2. Define Destination URL
